@@ -1,0 +1,821 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AGpractice - Welcome to Abyssal Grace School">
+    <title>AGpractice | Abyssal Grace School</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon" id="brandIcon">◇</div>
+            <div>
+                <div class="brand-name">AGpractice</div>
+                <div class="brand-subtitle">ABYSSAL GRACE</div>
+            </div>
+        </div>
+
+        <div class="school-name">
+            Welcome to<br>
+            <strong>Abyssal Grace School</strong>
+        </div>
+
+        <div class="menu-label">STUDY SPACE</div>
+
+        <nav class="nav-menu">
+
+            <button class="nav-item active" data-page="dashboard">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </button>
+
+            <button class="nav-item" data-page="vocabulary">
+                <span class="nav-icon">▣</span>
+                <span>Vocabulary</span>
+            </button>
+
+            <button class="nav-item" data-page="grammar">
+                <span class="nav-icon">✎</span>
+                <span>Grammar</span>
+            </button>
+
+            <button class="nav-item" data-page="reading">
+                <span class="nav-icon">◉</span>
+                <span>Reading</span>
+            </button>
+
+            <button class="nav-item" data-page="listening">
+                <span class="nav-icon">♫</span>
+                <span>Listening</span>
+            </button>
+
+            <button class="nav-item" data-page="writing">
+                <span class="nav-icon">✧</span>
+                <span>Writing</span>
+            </button>
+
+            <button class="nav-item" data-page="speaking">
+                <span class="nav-icon">☏</span>
+                <span>Speaking</span>
+            </button>
+
+        </nav>
+
+        <div class="menu-label personal-label">PERSONAL</div>
+
+        <nav class="nav-menu">
+
+            <button class="nav-item" data-page="notebook">
+                <span class="nav-icon">♡</span>
+                <span>My Notebook</span>
+            </button>
+
+            <button class="nav-item" data-page="practice">
+                <span class="nav-icon">▤</span>
+                <span>Practice</span>
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <span>✦</span>
+            <strong>Keep learning.</strong>
+            <p>Little by little, you will get there.</p>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="topbar">
+
+            <div class="breadcrumb">
+                Abyssal Grace / <strong id="breadcrumbTitle">Dashboard</strong>
+            </div>
+
+            <div class="top-actions">
+
+                <select id="themeSelect" class="theme-select" aria-label="Choose theme">
+                    <option value="kaya">Kaya</option>
+                    <option value="mia">Mia</option>
+                    <option value="luki">Luki</option>
+                    <option value="dach">Dach</option>
+                    <option value="ht">HT</option>
+                    <option value="sorry">sorry</option>
+                    <option value="kino">Kino</option>
+                    <option value="mai">Mai</option>
+                    <option value="dtuan">DTuan</option>
+                </select>
+
+                <button id="modeToggle" class="mode-toggle" title="Toggle light/dark mode">
+                    ☾
+                </button>
+
+                <div class="avatar">✦</div>
+
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+        <section id="dashboardPage" class="page-content">
+
+            <section class="welcome">
+                <div class="welcome-label">YOUR PERSONAL STUDY SPACE</div>
+                <h1>Welcome back, <span>learner!</span></h1>
+                <p>Welcome to Abyssal Grace School. What would you like to learn today?</p>
+            </section>
+
+            <section class="hero glass">
+
+                <div class="hero-content">
+                    <div class="hero-tag">YOUR LEARNING JOURNEY</div>
+
+                    <h2>Knowledge begins with curiosity.</h2>
+
+                    <p>
+                        Explore new words, understand new concepts
+                        and build your English skills at your own pace.
+                    </p>
+
+                    <button class="primary-btn" id="startLearning">
+                        Start learning →
+                    </button>
+                </div>
+
+                <div class="hero-decoration">✧</div>
+
+            </section>
+
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <h2>Your overview</h2>
+                </div>
+
+                <div class="stats">
+
+                    <div class="stat-card glass">
+                        <div class="stat-icon">📖</div>
+                        <h3 id="wordCount">0</h3>
+                        <p>Words learned</p>
+                    </div>
+
+                    <div class="stat-card glass">
+                        <div class="stat-icon">✓</div>
+                        <h3>0</h3>
+                        <p>Exercises completed</p>
+                    </div>
+
+                    <div class="stat-card glass">
+                        <div class="stat-icon">✦</div>
+                        <h3>0 days</h3>
+                        <p>Learning streak</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <h2>Study menu</h2>
+                    <span class="section-note">Choose your subject</span>
+                </div>
+
+                <div class="study-grid">
+
+                    <button class="study-card glass" data-page="vocabulary">
+                        <span class="study-icon">📚</span>
+                        <h3>Vocabulary</h3>
+                        <p>Words, expressions and flashcards.</p>
+                    </button>
+
+                    <button class="study-card glass" data-page="grammar">
+                        <span class="study-icon">✎</span>
+                        <h3>Grammar</h3>
+                        <p>Grammar knowledge and exercises.</p>
+                    </button>
+
+                    <button class="study-card glass" data-page="reading">
+                        <span class="study-icon">📄</span>
+                        <h3>Reading</h3>
+                        <p>Reading comprehension and texts.</p>
+                    </button>
+
+                    <button class="study-card glass" data-page="listening">
+                        <span class="study-icon">🎧</span>
+                        <h3>Listening</h3>
+                        <p>Listening practice and dictation.</p>
+                    </button>
+
+                    <button class="study-card glass" data-page="writing">
+                        <span class="study-icon">📝</span>
+                        <h3>Writing</h3>
+                        <p>Writing practice and personal notes.</p>
+                    </button>
+
+                    <button class="study-card glass" data-page="speaking">
+                        <span class="study-icon">💬</span>
+                        <h3>Speaking</h3>
+                        <p>Speaking topics and pronunciation.</p>
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- VOCABULARY PAGE -->
+        <section id="flashcardsPage" class="page-content" hidden>
+
+            <div class="page-heading">
+                <div>
+                    <div class="welcome-label">BUILD YOUR VOCABULARY</div>
+                    <h1>Vocabulary <span>Flashcards</span></h1>
+                    <p>Learn and review your saved words.</p>
+                </div>
+            </div>
+
+
+            <!-- VOCABULARY MENU -->
+            <div class="vocab-menu glass">
+
+                <div class="vocab-menu-title">
+                    <span>☷</span>
+                    <div>
+                        <strong>Study menu</strong>
+                        <p>Select your learning method</p>
+                    </div>
+                </div>
+
+                <div class="mode-list">
+
+                    <button class="mode-item active" data-mode="flashcard">
+                        <span>▣</span>
+                        <div>
+                            <strong>Flashcard</strong>
+                            <small>Learn and memorize words</small>
+                        </div>
+                        <span class="mode-arrow">→</span>
+                    </button>
+
+                  <button class="mode-item" data-mode="quiz">
+                        <span>✎</span>
+                        <div>
+                            <strong>Quiz</strong>
+                            <small>Choose the correct answer</small>
+                        </div>
+                        <span class="mode-arrow">→</span>
+                    </button>
+                    <button class="mode-item" data-mode="match">
+                        <span>⇄</span><div><strong>Word matching</strong><small>Match words with their meanings</small></div><span class="mode-arrow">→</span>
+                    </button>
+                    <button class="mode-item" data-mode="guess">
+                        <span>⌕</span><div><strong>Guess the word</strong><small>Remember the word from its clue</small></div><span class="mode-arrow">→</span>
+                    </button>
+                    <button class="mode-item" data-mode="mixed">
+                        <span>✧</span><div><strong>Mixed practice</strong><small>Combine different learning modes</small></div><span class="mode-arrow">→</span>
+                    </button>
+                    <button class="mode-item" data-mode="add">
+                        <span>＋</span><div><strong>Add Vocabulary</strong><small>Add words manually or import a CSV file</small></div><span class="mode-arrow">→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- VOCABULARY SETTINGS -->
+            <div class="vocab-toolbar">
+
+                <div class="vocab-counter">
+                    <span id="cardPosition">01 / 04</span>
+                    <span class="counter-label">WORDS</span>
+                </div>
+
+                <label class="pronunciation-setting">
+                    <input type="checkbox" id="pronunciationToggle" checked>
+                    <span class="custom-switch"></span>
+                    <span>Pronunciation</span>
+                </label>
+
+            </div>
+
+
+            <!-- FLASHCARD MODE -->
+            <section id="flashcardMode" class="study-mode">
+
+                <div class="flashcard-instruction">
+                    Click the card to reveal the meaning.
+                </div>
+
+                <div class="flashcard-scene">
+
+                    <div class="flashcard" id="flashcard">
+
+                        <div class="flashcard-face flashcard-front">
+
+                            <span class="card-label">ENGLISH WORD</span>
+
+                            <h2 id="frontWord">Serendipity</h2>
+
+                            <span class="front-hint">
+                                Click to reveal
+                            </span>
+
+                            <span class="card-decoration">✧</span>
+
+                        </div>
+
+
+                        <div class="flashcard-face flashcard-back">
+
+                            <div class="back-content">
+
+                                <span class="card-label">MEANING & EXAMPLE</span>
+
+                                <h2 id="backWord">Serendipity</h2>
+
+                                <div class="ipa-row">
+                                    <span id="wordIPA">/ˌser.ənˈdɪp.ə.ti/</span>
+                                    <button class="sound-button audio-control" id="cardAudio" title="Listen">
+                                        ♫
+                                    </button>
+                                </div>
+
+                                <span class="part-of-speech" id="wordType">noun</span>
+
+                                <p class="word-meaning" id="wordMeaning">
+                                    Sự tình cờ may mắn; tình cờ tìm thấy điều tốt đẹp.
+                                </p>
+
+                                <div class="definition">
+                                    <strong>Definition</strong>
+                                    <p id="wordDefinition">
+                                        The occurrence of finding something good or useful without looking for it.
+                                    </p>
+                                </div>
+
+                                <div class="example">
+                                    <strong>Example</strong>
+                                    <p id="wordExample">
+                                        Finding this little bookstore was pure serendipity.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="flashcard-controls">
+
+                    <button class="secondary-btn" id="previousCard">
+                        ← Previous
+                    </button>
+
+                    <button class="primary-btn" id="flipCard">
+                        Flip card ↻
+                    </button>
+
+                    <button class="secondary-btn" id="nextCard">
+                        Next →
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- RANDOM MODE -->
+            
+<!-- WORD SCRAMBLE MODE -->
+<section id="randomMode" class="study-mode" hidden>
+    <div class="scramble-game glass">
+
+        <header class="scramble-header">
+            <span class="scramble-eyebrow">VOCABULARY PRACTICE</span>
+            <h2>Word Scramble</h2>
+            <p>Arrange the letters to discover the correct word.</p>
+        </header>
+
+        <!-- WORD MEANING -->
+        <div class="scramble-hint-box">
+            <span class="scramble-label">WORD MEANING</span>
+            <p id="scrambleHint">Meaning will appear here.</p>
+        </div>
+
+        <!-- ANSWER AREA -->
+        <div class="scramble-answer-section">
+            <span class="scramble-label">YOUR ANSWER</span>
+
+            <div id="scrambleAnswer" class="scramble-answer">
+                <span class="scramble-placeholder">Choose the letters below...</span>
+            </div>
+        </div>
+
+        <!-- LETTER POOL -->
+        <div class="scramble-pool-section">
+            <span class="scramble-label">AVAILABLE LETTERS</span>
+
+            <div id="scrambleLetters" class="scramble-letters"></div>
+        </div>
+
+        <!-- FEEDBACK -->
+        <p id="scrambleFeedback" class="scramble-feedback" aria-live="polite">
+            Select the letters in the correct order.
+        </p>
+
+        <!-- ACTIONS -->
+        <div class="scramble-actions">
+    <button type="button" class="secondary-btn" id="scrambleReset">
+        ↶ Reset
+    </button>
+
+    <button type="button" class="primary-btn" id="scrambleCheck">
+        Submit Answer
+    </button>
+
+    <button type="button" class="primary-btn" id="scrambleNext" hidden>
+        Next word →
+    </button>
+</div>
+</section>
+<!-- WORD MATCHING MODE -->
+<section id="wordMatchingMode" class="study-mode" hidden>
+
+    <div class="matching-header">
+        <div>
+            <span class="card-label">VOCABULARY GAME</span>
+            <h2>Word Matching</h2>
+            <p>Match each English word with its Vietnamese meaning.</p>
+        </div>
+
+        <button class="secondary-btn" id="restartMatching">
+            ↻ Play again
+        </button>
+    </div>
+
+    <div class="matching-progress">
+        <span id="matchingProgress">0 / 6 pairs matched</span>
+        <div class="matching-progress-track">
+            <div id="matchingProgressBar"></div>
+        </div>
+    </div>
+
+    <div class="matching-columns">
+
+        <div class="matching-column">
+            <h3>English</h3>
+            <div id="matchingEnglish" class="matching-list"></div>
+        </div>
+
+        <div class="matching-column">
+            <h3>Vietnamese</h3>
+            <div id="matchingVietnamese" class="matching-list"></div>
+        </div>
+
+    </div>
+
+    <p id="matchingMessage" class="matching-message" aria-live="polite">
+        Choose a word and then choose its meaning.
+    </p>
+
+</section>
+<!-- QUIZ MODE -->
+<section id="quizMode" class="study-mode" hidden>
+    <div class="quiz-card glass">
+
+        <header class="quiz-header">
+            <span class="quiz-eyebrow">VOCABULARY PRACTICE</span>
+            <h2>Word Quiz</h2>
+            <p>Choose the correct answer.</p>
+        </header>
+
+        <div class="quiz-progress">
+            <span id="quizQuestionNumber">Question 1</span>
+            <span id="quizScore">Score: 0</span>
+        </div>
+
+        <div class="quiz-question-box">
+            <span id="quizQuestionType" class="quiz-question-type">
+                hoc gioi len ag oi
+            </span>
+            <h3 id="quizPrompt">Question appears here</h3>
+        </div>
+
+        <div id="quizOptions" class="quiz-options"></div>
+
+        <p id="quizFeedback" class="quiz-feedback">
+            Choose one answer.
+        </p>
+
+        <button type="button" id="quizNext" class="primary-btn" hidden>
+            Next Question →
+        </button>
+
+    </div>
+</section>
+        </section>
+
+
+        <!-- ADD VOCABULARY PAGE -->
+        <section id="addVocabularyPage" class="page-content add-vocabulary-page" hidden>
+
+            <div class="page-heading">
+                <div>
+                    <div class="welcome-label">GROW YOUR WORD COLLECTION</div>
+                    <h1>Add <span>Vocabulary</span></h1>
+                    <p>Add words manually or import a CSV file. Your saved words will appear in Flashcards.</p>
+                </div>
+            </div>
+
+            <section class="add-vocab-panel glass">
+                <div class="add-vocab-heading">
+                    <div>
+                        <span class="add-vocab-kicker">METHOD 01</span>
+                        <h2>Manual entry</h2>
+                        <p>Fill in the fields below. Each word has its own horizontal row.</p>
+                    </div>
+                    <span class="add-vocab-icon">✎</span>
+                </div>
+
+                <div class="manual-table-scroll">
+                    <div class="manual-table-head">
+                        <span>Word</span><span>IPA</span><span>Category</span><span>Part of Speech</span><span>Meaning</span><span>Example</span><span></span>
+                    </div>
+                    <div id="manualRows" class="manual-rows">
+                        <!-- Dòng nhập đầu tiên được đặt sẵn trong HTML để luôn nhìn thấy ô nhập. -->
+                        <div class="manual-entry-row">
+                            <input type="text" placeholder="e.g. Serendipity" data-field="word" aria-label="Word">
+                            <input type="text" placeholder="/ˌ.../" data-field="ipa" aria-label="IPA">
+                            <select data-field="category" aria-label="Category">
+                                <option>Vocabulary</option>
+                                <option>Phrasal Verb</option>
+                                <option>Idiom</option>
+                                <option>Collection</option>
+                            </select>
+                            <select data-field="pos" aria-label="Part of Speech">
+                                <option>Noun</option><option>Verb</option><option>Adjective</option>
+                                <option>Adverb</option><option>Pronoun</option><option>Preposition</option>
+                                <option>Conjunction</option><option>Interjection</option><option>Determiner</option><option>Other</option>
+                            </select>
+                            <input type="text" placeholder="Vietnamese meaning" data-field="meaning" aria-label="Meaning">
+                            <input type="text" placeholder="Example sentence" data-field="example" aria-label="Example">
+                            <button type="button" class="remove-entry-btn" title="Remove this row" aria-label="Remove row">×</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-vocab-actions">
+                    <button type="button" class="secondary-btn" id="addManualRow">＋ Add another row</button>
+                    <button type="button" class="primary-btn" id="saveManualWords">Save vocabulary</button>
+                </div>
+                <p class="form-message" id="manualMessage" role="status"></p>
+            </section>
+
+            <section class="add-vocab-panel glass">
+                <div class="add-vocab-heading">
+                    <div>
+                        <span class="add-vocab-kicker">METHOD 02</span>
+                        <h2>Import CSV</h2>
+                        <p>Use this column order: Word, IPA, Category, Part of Speech, Meaning, Example.</p>
+                    </div>
+                    <span class="add-vocab-icon">⇧</span>
+                </div>
+
+                <label class="csv-upload" for="vocabCsvFile">
+                    <span class="csv-upload-icon">＋</span>
+                    <strong>Choose a CSV file</strong>
+                    <small id="csvFileName">No file selected</small>
+                    <input type="file" id="vocabCsvFile" accept=".csv,text/csv">
+                </label>
+
+                <div id="csvPreviewSection" class="csv-preview-section" hidden>
+                    <div class="csv-preview-top">
+                        <strong>Review imported words</strong>
+                        <span id="csvPreviewCount">0 rows</span>
+                    </div>
+                    <div class="csv-table-scroll">
+                        <table class="csv-table">
+                            <thead><tr><th>Word</th><th>IPA</th><th>Category</th><th>Part of Speech</th><th>Meaning</th><th>Example</th><th></th></tr></thead>
+                            <tbody id="csvPreviewBody"></tbody>
+                        </table>
+                    </div>
+                    <div class="add-vocab-actions">
+                        <button type="button" class="secondary-btn" id="cancelCsvImport">Cancel</button>
+                        <button type="button" class="primary-btn" id="saveCsvWords">Save imported words</button>
+                    </div>
+                    <p class="form-message" id="csvMessage" role="status"></p>
+                </div>
+                        </section>
+
+            <!-- MANAGE SAVED VOCABULARY -->
+<section class="add-vocab-panel glass">
+    <div class="add-vocab-heading">
+        <div>
+            <span class="add-vocab-kicker">YOUR COLLECTION</span>
+            <h2>Manage Vocabulary</h2>
+            <p>Edit or delete your saved words.</p>
+        </div>
+        <span class="add-vocab-icon">✎</span>
+    </div>
+
+    <div id="savedVocabList" class="saved-vocab-list"></div>
+    <p id="savedVocabMessage" class="form-message"></p>
+</section>
+            </section>
+
+        </section>
+
+
+        
+
+
+        <!-- OTHER PAGES -->
+         <!-- SPEAKING PAGE -->
+<section id="speakingPage" class="page-content" hidden>
+
+    <div class="speaking-header">
+        <h1>Speaking Practice</h1>
+        <p>Practice your English vocabulary and pronunciation.</p>
+    </div>
+
+    <div class="speaking-modes">
+
+        <button
+            type="button"
+            class="speaking-mode-btn active"
+            data-speaking-mode="ipa-word">
+            IPA → Word
+        </button>
+
+        <button
+            type="button"
+            class="speaking-mode-btn"
+            data-speaking-mode="ipa-speech">
+            IPA → Speaking
+        </button>
+
+        <button
+            type="button"
+            class="speaking-mode-btn"
+            data-speaking-mode="word-speech">
+            Word → Speaking
+        </button>
+
+    </div>
+
+    <div class="speaking-card glass">
+
+        <div id="speakingIPAWord">
+            <p>Look at the IPA and type the correct word.</p>
+        </div>
+
+        <div id="speakingIPASpeech" hidden>
+            <p>Look at the IPA and pronounce the word.</p>
+        </div>
+
+        <div id="speakingWordSpeech" hidden>
+            <p>Read the word aloud.</p>
+        </div>
+
+        <div class="speaking-question">
+            <span id="speakingPrompt">/ˌser.ənˈdɪp.ə.ti/</span>
+        </div>
+
+        <input
+            type="text"
+            id="speakingInput"
+            placeholder="Type the English word..."
+            autocomplete="off"
+        >
+
+        <button
+            type="button"
+            id="speakingCheck"
+            class="primary-btn">
+            Check Answer
+        </button>
+
+        <button
+            type="button"
+            id="speakingRecord"
+            class="primary-btn"
+            hidden>
+            Start speaking
+        </button>
+
+        <div
+            id="speakingTranscript"
+            class="speaking-transcript"
+            hidden>
+        </div>
+
+        <p id="speakingTarget" class="speaking-target"></p>
+
+        <p
+            id="speakingStatus"
+            class="speaking-status">
+        </p>
+
+        <p
+            id="speakingFeedback"
+            class="speaking-feedback">
+        </p>
+
+        <button
+            type="button"
+            id="speakingNext"
+            class="primary-btn">
+            Next Word
+        </button>
+
+    </div>
+
+</section>
+
+        <!-- READING PAGE -->
+        <section id="readingPage" class="page-content reading-page" hidden>
+            <div class="reading-hero"><div><div class="welcome-label">EXPLORE, READ & UNDERSTAND</div><h1>Reading <span>Library</span></h1><p>Build your reading skills with passages and short exercises at your own pace.</p></div><div class="reading-hero-mark" aria-hidden="true">文</div></div>
+            <section class="reading-overview glass">
+                <div><span class="reading-stat-number" id="readingTotalCount">0</span><span class="reading-stat-label">Exercises</span></div>
+                <div><span class="reading-stat-number" id="readingCompletedCount">0</span><span class="reading-stat-label">Completed</span></div>
+                <div><span class="reading-stat-number" id="readingProgressPercent">0%</span><span class="reading-stat-label">Progress</span></div>
+            </section>
+            <section class="reading-section">
+                <div class="reading-section-heading"><div><span class="reading-kicker">FIND YOUR NEXT EXERCISE</span><h2>Explore the library</h2></div><span class="reading-section-note">Choose a level or topic</span></div>
+                <div class="reading-filter-panel glass">
+                    <label class="reading-search-wrap" for="readingSearch"><span aria-hidden="true">⌕</span><input id="readingSearch" type="search" placeholder="Search by title or keyword..." autocomplete="off"></label>
+                    <div class="reading-filter-group"><span class="reading-filter-label">LEVEL</span><div id="readingLevelFilters" class="reading-chip-list"><button type="button" class="reading-chip active" data-level="all">All levels</button><button type="button" class="reading-chip" data-level="A1">A1</button><button type="button" class="reading-chip" data-level="A2">A2</button><button type="button" class="reading-chip" data-level="B1">B1</button><button type="button" class="reading-chip" data-level="B2">B2</button><button type="button" class="reading-chip" data-level="C1">C1</button></div></div>
+                    <div class="reading-filter-group"><span class="reading-filter-label">TOPIC</span><div id="readingTopicFilters" class="reading-chip-list"><button type="button" class="reading-chip active" data-topic="all">All topics</button><button type="button" class="reading-chip" data-topic="Business">Business</button><button type="button" class="reading-chip" data-topic="Environment">Environment</button><button type="button" class="reading-chip" data-topic="Education">Education</button><button type="button" class="reading-chip" data-topic="Technology">Technology</button><button type="button" class="reading-chip" data-topic="Society">Society</button><button type="button" class="reading-chip" data-topic="Health & Science">Health &amp; Science</button><button type="button" class="reading-chip" data-topic="Arts & Culture">Arts &amp; Culture</button><button type="button" class="reading-chip" data-topic="Daily Life">Daily Life</button></div></div>
+                    <div class="reading-filter-bottom"><span id="readingResultCount" aria-live="polite">Loading exercises...</span><label for="readingSort">Sort<select id="readingSort"><option value="newest">Recently added</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></label></div>
+                </div>
+            </section>
+            <section class="reading-section"><div class="reading-section-heading"><div><span class="reading-kicker">A LITTLE PRACTICE GOES A LONG WAY</span><h2>Quick Practice</h2><p>Short exercises for a few spare minutes.</p></div><button type="button" class="secondary-btn" id="readingRandomQuick">↻ Random practice</button></div><div id="readingQuickList" class="reading-card-grid"></div></section>
+            <section class="reading-section"><div class="reading-section-heading"><div><span class="reading-kicker">YOUR READING COLLECTION</span><h2>All exercises</h2></div></div><div id="readingExerciseList" class="reading-card-grid"></div><div id="readingEmptyState" class="reading-empty glass" hidden><span>⌕</span><h3>No exercises found</h3><p>Try changing your search or filters.</p><button type="button" class="secondary-btn" id="readingResetFilters">Clear filters</button></div></section>
+            <section id="readingExerciseView" class="reading-exercise-view glass" hidden><div class="reading-exercise-top"><button type="button" class="secondary-btn" id="readingBackToLibrary">← Back to library</button><span id="readingExerciseMeta" class="reading-exercise-meta"></span></div><h2 id="readingExerciseTitle"></h2><div id="readingPassage" class="reading-passage"></div>
+<div id="readingWordPopup" class="reading-word-popup" hidden role="dialog" aria-label="Word tools">
+    <div class="reading-word-popup-top">
+        <strong id="readingPopupWord"></strong>
+        <button type="button" id="readingPopupClose" aria-label="Close">×</button>
+    </div>
+    <button type="button" id="readingTranslateWord" class="secondary-btn">Translate to Vietnamese</button>
+    <p id="readingTranslationResult" class="reading-translation-result" aria-live="polite"></p>
+    <p id="readingIpaResult" class="reading-lookup-detail"></p>
+    <p id="readingPosResult" class="reading-lookup-detail"></p>
+    <button type="button" id="readingAddWord" class="primary-btn" hidden>Add to Vocabulary</button>
+</div><div id="readingQuestions" class="reading-questions"></div><div class="reading-submit-row"><button type="button" class="primary-btn" id="readingSubmitAnswers">Check answers</button><span id="readingScore" class="reading-score" aria-live="polite"></span></div><div id="readingResultMessage" class="reading-result-message" hidden></div><button type="button" class="secondary-btn" id="readingTryAnother" hidden>Choose another exercise →</button></section>
+            <p id="readingLoadError" class="reading-load-error" role="status" hidden>Could not load reading exercises. Please check that json/reading.json exists and try refreshing the page.</p>
+        </section>
+
+        <section id="placeholderPage" class="placeholder-page" hidden>
+
+            <div class="placeholder-icon">✧</div>
+
+            <h1 id="placeholderTitle">Grammar</h1>
+
+            <p>This section is waiting to be developed.</p>
+
+            <span>Coming soon</span>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="hs/script.js"></script>
+
+</body>
+</html>

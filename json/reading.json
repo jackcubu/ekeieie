@@ -1,0 +1,408 @@
+[
+  {
+    "id": "reading_007",
+    "title": "A Conference Programme",
+    "level": "B1",
+    "topics": [
+      "Business",
+      "Education"
+    ],
+    "format": "passage",
+    "summary": "Read a fictional management conference schedule, then practise finding details, understanding statements and completing information.",
+    "publishedAt": "2026-11-06T10:00:00+07:00",
+    "sourceNote": "Original practice exercise inspired by the conference-programme reading task format.",
+    "passage": "NORTHSTAR LEADERSHIP CONFERENCE\n\nVenue: Riverside Conference Centre\nDate: 18 June\n\nMORNING PROGRAMME\n\n9.00–9.20 | Welcome and opening remarks\nSpeaker: Daniel Reed\nAn introduction to the day and its main themes.\n\n9.20–10.30 | Building a supportive team\nSpeaker: Sofia Nguyen\nExplore practical ways to help team members feel included and work well together.\n\n10.30–11.00 | Coffee break\n\n11.00–12.15 | Communicating across cultures\nSpeaker: Lucas Pereira\nLearn how communication styles can differ and how to avoid misunderstandings in international teams.\n\n12.15–1.30 | Lunch\n\nAFTERNOON PROGRAMME\n\n1.30–2.45 | Planning a successful project\nSpeaker: Aisha Khan\nDiscover how to set clear goals, share responsibilities and keep a project on schedule.\n\n2.45–3.00 | Short break\n\n3.00–4.00 | Creative problem-solving workshop\nSpeaker: Ethan Brooks\nWork in small groups to explore different solutions to workplace challenges.\n\n4.00–4.30 | Closing session\nSpeaker: Daniel Reed\nA summary of the main ideas and final questions.",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "Where will the conference take place?",
+        "options": [
+          "Riverside Conference Centre",
+          "Northstar Hotel",
+          "City Library",
+          "Westside University"
+        ],
+        "answer": "Riverside Conference Centre",
+        "explanation": "The venue is listed near the top of the programme."
+      },
+      {
+        "type": "true-false",
+        "question": "The coffee break starts at 10.30.",
+        "answer": "True",
+        "explanation": "The morning programme lists the coffee break from 10.30 to 11.00."
+      },
+      {
+        "type": "true-false",
+        "question": "The session about communication takes place after lunch.",
+        "answer": "False",
+        "explanation": "Communicating across cultures is scheduled from 11.00 to 12.15, before lunch."
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which session would be most useful for someone who wants to prevent misunderstandings in an international team?",
+        "options": [
+          "Building a supportive team",
+          "Communicating across cultures",
+          "Planning a successful project",
+          "Creative problem-solving workshop"
+        ],
+        "answer": "Communicating across cultures",
+        "explanation": "This session focuses on different communication styles and avoiding misunderstandings."
+      },
+      {
+        "type": "short-answer",
+        "question": "Who leads the creative problem-solving workshop?",
+        "answer": "Ethan Brooks",
+        "explanation": "Ethan Brooks is named as the speaker for the 3.00–4.00 workshop."
+      },
+      {
+        "type": "short-answer",
+        "question": "Complete the information: The project-planning session begins at ______.",
+        "answer": "1.30",
+        "explanation": "Planning a successful project begins at 1.30 p.m."
+      }
+    ],
+    "discussionPrompt": "Which session would you choose to attend? Give one reason for your choice."
+  },
+  {
+    "id": "reading_008",
+    "title": "The Bicycle Path Behind the River",
+    "level": "Easy",
+    "topics": [
+      "Transport",
+      "Daily Life",
+      "Environment"
+    ],
+    "format": "passage",
+    "summary": "A short passage about a new bicycle path in Mapleford, with short-answer, sentence-completion and True/False/Not Given questions.",
+    "publishedAt": "2026-11-06T10:30:00+07:00",
+    "passage": "Last year, the town of Mapleford opened a new bicycle path behind the river. The path is three kilometres long and connects the train station with the sports centre. Before the path was built, cyclists had to use a busy road with many cars.\n\nThe new path is popular with students because it passes near two schools. It is also used by office workers who want a quiet route in the morning. The town council added lights along the path, so people can use it safely in the early evening.\n\nThere are still some problems. After heavy rain, water collects near the middle of the path. The council plans to improve drainage in July. Some residents have also asked for more rubbish bins because snack wrappers are sometimes left near the benches.",
+    "questions": [
+      {
+        "type": "short-answer",
+        "question": "1. How long is the bicycle path? (NO MORE THAN TWO WORDS AND/OR A NUMBER)",
+        "answer": "three kilometres",
+        "explanation": "Bài đọc: “The path is three kilometres long.”"
+      },
+      {
+        "type": "short-answer",
+        "question": "2. What does the path connect with the sports centre? (NO MORE THAN TWO WORDS AND/OR A NUMBER)",
+        "answer": "train station",
+        "explanation": "Bài đọc: “connects the train station with the sports centre.”"
+      },
+      {
+        "type": "short-answer",
+        "question": "3. Which group likes the path because it passes near two schools?",
+        "answer": "students",
+        "explanation": "Bài đọc: “popular with students because...”"
+      },
+      {
+        "type": "short-answer",
+        "question": "4. What did the council add along the path?",
+        "answer": "lights",
+        "explanation": "Bài đọc: “added lights along the path.”"
+      },
+      {
+        "type": "short-answer",
+        "question": "5. When does the council plan to improve drainage?",
+        "answer": "July",
+        "explanation": "Bài đọc: “plans to improve drainage in July.”"
+      },
+      {
+        "type": "short-answer",
+        "question": "6. Before the new path, cyclists used a busy road with many ______. (NO MORE THAN TWO WORDS)",
+        "answer": "cars",
+        "explanation": "Bài đọc: “busy road with many cars.”"
+      },
+      {
+        "type": "short-answer",
+        "question": "7. Office workers use the path because they want a ______ route. (NO MORE THAN TWO WORDS)",
+        "answer": "quiet",
+        "explanation": "Bài đọc: “want a quiet route.”"
+      },
+      {
+        "type": "short-answer",
+        "question": "8. Water collects near the ______ of the path after heavy rain. (NO MORE THAN TWO WORDS)",
+        "answer": "middle",
+        "explanation": "Bài đọc: “near the middle of the path.”"
+      },
+      {
+        "type": "short-answer",
+        "question": "9. Residents have asked for more ______. (NO MORE THAN TWO WORDS)",
+        "answer": "rubbish bins",
+        "explanation": "Bài đọc: “asked for more rubbish bins.”"
+      },
+      {
+        "type": "true-false-not-given",
+        "question": "10. The path opened last year.",
+        "answer": "TRUE",
+        "explanation": "Bài đọc mở đầu: “Last year, the town of Mapleford opened...”"
+      },
+      {
+        "type": "true-false-not-given",
+        "question": "11. The path is mainly used by tourists.",
+        "answer": "NOT GIVEN",
+        "explanation": "Bài nhắc đến students và office workers, không nói tourists có phải nhóm chính hay không."
+      },
+      {
+        "type": "true-false-not-given",
+        "question": "12. Snack wrappers are sometimes left near the benches.",
+        "answer": "TRUE",
+        "explanation": "Bài đọc nói snack wrappers đôi khi bị bỏ lại gần các ghế dài."
+      }
+    ],
+    "answerInstructions": "Questions 1–5: NO MORE THAN TWO WORDS AND/OR A NUMBER. Questions 6–9: NO MORE THAN TWO WORDS. Questions 10–12: TRUE, FALSE or NOT GIVEN."
+  },
+  {
+    "id": "reading_009",
+    "title": "A New Use for Old Buildings",
+    "level": "Moderate",
+    "topics": [
+      "Arts & Culture",
+      "Environment",
+      "Society"
+    ],
+    "format": "passage",
+    "summary": "A passage about reusing old buildings, with matching information, summary completion and multiple-choice questions.",
+    "publishedAt": "2026-11-06T10:35:00+07:00",
+    "passage": "A  Many towns have old buildings that are no longer used for their original purpose. A factory may close, a cinema may lose its audience, or a railway station may become unnecessary after a new line is built. Instead of knocking these buildings down, some towns are giving them a second life.\n\nB  One reason is cost. Building something completely new can be expensive. If the walls and roof of an old building are still strong, it may be cheaper to repair the inside. Reuse can also save materials, which is better for the environment.\n\nC  Old buildings often carry local memories. A former cinema may remind residents of childhood weekends, while an old station may represent the town’s connection with other places. When these buildings are reused, the town keeps part of its history.\n\nD  However, reuse is not always simple. Some old buildings have narrow doors, weak floors or poor heating. They may need major changes before people can use them safely. Designers must also decide which old features to keep and which to replace.\n\nE  Successful projects often mix old and new. In one town, an old factory became an art school. The brick walls were kept, but large windows were added to bring in more light. Students said the building felt creative because it did not look like a normal classroom.",
+    "questions": [
+      {
+        "type": "short-answer",
+        "question": "1. Which paragraph gives examples of original purposes that may disappear? (Write A–E)",
+        "answer": "A",
+        "explanation": "Đoạn A nêu factory, cinema và railway station có thể mất chức năng ban đầu."
+      },
+      {
+        "type": "short-answer",
+        "question": "2. Which paragraph gives a reason why reuse can be environmentally helpful? (Write A–E)",
+        "answer": "B",
+        "explanation": "Đoạn B nói việc tái sử dụng có thể tiết kiệm vật liệu, tốt hơn cho môi trường."
+      },
+      {
+        "type": "short-answer",
+        "question": "3. Which paragraph describes emotional value connected to old buildings? (Write A–E)",
+        "answer": "C",
+        "explanation": "Đoạn C nói về local memories, childhood weekends và lịch sử của thị trấn."
+      },
+      {
+        "type": "short-answer",
+        "question": "4. Which paragraph describes physical problems that may make reuse difficult? (Write A–E)",
+        "answer": "D",
+        "explanation": "Đoạn D nêu narrow doors, weak floors và poor heating."
+      },
+      {
+        "type": "short-answer",
+        "question": "5. Which paragraph gives an example of a building changed into a place for learning? (Write A–E)",
+        "answer": "E",
+        "explanation": "Đoạn E kể một nhà máy cũ được chuyển thành art school."
+      },
+      {
+        "type": "short-answer",
+        "question": "6. Which paragraph mentions a design change that increased natural light? (Write A–E)",
+        "answer": "E",
+        "explanation": "Đoạn E nói large windows were added to bring in more light."
+      },
+      {
+        "type": "short-answer",
+        "question": "7. Reusing old buildings can be cheaper than constructing something new if the ______ and roof are still strong. (NO MORE THAN TWO WORDS)",
+        "answer": "walls",
+        "explanation": "Đoạn B: “If the walls and roof of an old building are still strong...”"
+      },
+      {
+        "type": "short-answer",
+        "question": "8. Reuse can also save ______. (NO MORE THAN TWO WORDS)",
+        "answer": "materials",
+        "explanation": "Đoạn B: “Reuse can also save materials.”"
+      },
+      {
+        "type": "short-answer",
+        "question": "9. Old buildings may contain local ______. (NO MORE THAN TWO WORDS)",
+        "answer": "memories",
+        "explanation": "Đoạn C: “Old buildings often carry local memories.”"
+      },
+      {
+        "type": "short-answer",
+        "question": "10. Some old buildings need major changes before they are ______. (NO MORE THAN TWO WORDS)",
+        "answer": "safe",
+        "explanation": "Đoạn D viết “before people can use them safely”; câu tóm tắt dùng tính từ safe."
+      },
+      {
+        "type": "multiple-choice",
+        "question": "11. What is the main idea of the passage?",
+        "options": [
+          "Old buildings can sometimes be reused in valuable ways.",
+          "All old buildings should become railway stations.",
+          "New buildings are always cheaper than old ones.",
+          "Towns should remove all old cinemas."
+        ],
+        "answer": "Old buildings can sometimes be reused in valuable ways.",
+        "explanation": "Toàn bài nêu lợi ích, giá trị, khó khăn và ví dụ về việc tái sử dụng công trình cũ."
+      },
+      {
+        "type": "multiple-choice",
+        "question": "12. Why were large windows added to the old factory?",
+        "options": [
+          "To make the building colder",
+          "To bring in more light",
+          "To hide the brick walls",
+          "To stop students entering"
+        ],
+        "answer": "To bring in more light",
+        "explanation": "Đoạn E: “large windows were added to bring in more light.”"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "13. According to the passage, designers need to decide ______.",
+        "options": [
+          "which old features to keep or replace",
+          "how to close every old factory",
+          "which students should study art",
+          "how to build a new railway line"
+        ],
+        "answer": "which old features to keep or replace",
+        "explanation": "Đoạn D nói designers phải quyết định giữ lại hay thay thế những đặc điểm cũ nào."
+      }
+    ],
+    "answerInstructions": "Questions 1–6: Write A–E. Questions 7–10: NO MORE THAN TWO WORDS. Questions 11–13: Choose A, B, C or D."
+  },
+  {
+    "id": "reading_010",
+    "title": "Learning in Public Libraries",
+    "level": "Moderate to Advanced",
+    "topics": [
+      "Education",
+      "Society",
+      "Technology"
+    ],
+    "format": "passage",
+    "summary": "A passage about the changing role of public libraries, with matching headings, Yes/No/Not Given, table completion and short-answer questions.",
+    "publishedAt": "2026-11-06T10:00:00+07:00",
+    "sourceNote": "Based on the learning passage and answer explanations supplied by the user.",
+    "passage": "A  Public libraries used to be seen mainly as places for borrowing books. That role is still important, but many libraries now support a wider range of learning. Visitors may attend workshops, use computers, join reading groups or receive help with forms and online services.\n\nB  This change is partly a response to digital life. Many everyday tasks, from applying for jobs to booking medical appointments, now require internet access. People without a computer at home can easily feel excluded. In my opinion, libraries are one of the fairest places to offer digital support because they are open to everyone.\n\nC  Libraries also provide a calm study environment. Not every student has a quiet desk at home. Some live in crowded flats, while others share rooms with younger siblings. A library table, even for one hour, can give a learner the space needed to focus.\n\nD  Another important service is community teaching. In some libraries, volunteers teach older adults how to send emails or use video calls. In others, parents learn how to read with young children. These classes are usually simple, but they can have a strong effect on daily life.\n\nE  The challenge is funding. New services need trained staff, working computers and safe spaces. If libraries are expected to do more without extra support, the quality of service may fall. A modern library should not be treated as a free solution to every social problem, but it can be a powerful starting point.",
+    "questions": [
+      {
+        "type": "short-answer",
+        "question": "1. Paragraph A — Choose the correct heading (I–VII).",
+        "answer": "iv",
+        "explanation": "Đoạn A nói thư viện hiện hỗ trợ phạm vi học tập rộng hơn, không chỉ cho mượn sách."
+      },
+      {
+        "type": "short-answer",
+        "question": "2. Paragraph B — Choose the correct heading (I–VII).",
+        "answer": "v",
+        "explanation": "Đoạn B nêu quan điểm rằng thư viện là nơi công bằng để cung cấp hỗ trợ kỹ thuật số."
+      },
+      {
+        "type": "short-answer",
+        "question": "3. Paragraph C — Choose the correct heading (I–VII).",
+        "answer": "ii",
+        "explanation": "Đoạn C tập trung vào môi trường học tập yên tĩnh."
+      },
+      {
+        "type": "short-answer",
+        "question": "4. Paragraph D — Choose the correct heading (I–VII).",
+        "answer": "vi",
+        "explanation": "Đoạn D mô tả việc dạy các kỹ năng thực tế trong cộng đồng."
+      },
+      {
+        "type": "short-answer",
+        "question": "5. Paragraph E — Choose the correct heading (I–VII).",
+        "answer": "i",
+        "explanation": "Đoạn E nói về khó khăn tài chính và nguồn lực của thư viện."
+      },
+      {
+        "type": "multiple-choice",
+        "question": "6. The writer believes book borrowing is no longer important.",
+        "options": [
+          "YES",
+          "NO",
+          "NOT GIVEN"
+        ],
+        "answer": "NO",
+        "explanation": "Tác giả nói vai trò cho mượn sách “is still important”."
+      },
+      {
+        "type": "multiple-choice",
+        "question": "7. The writer thinks libraries are fair places to provide digital support.",
+        "options": [
+          "YES",
+          "NO",
+          "NOT GIVEN"
+        ],
+        "answer": "YES",
+        "explanation": "Tác giả cho rằng thư viện là một trong những nơi công bằng nhất để cung cấp hỗ trợ kỹ thuật số."
+      },
+      {
+        "type": "multiple-choice",
+        "question": "8. The writer believes every student has a quiet desk at home.",
+        "options": [
+          "YES",
+          "NO",
+          "NOT GIVEN"
+        ],
+        "answer": "NO",
+        "explanation": "Bài đọc nói không phải học sinh nào cũng có bàn học yên tĩnh ở nhà."
+      },
+      {
+        "type": "multiple-choice",
+        "question": "9. The writer thinks simple library classes can strongly affect daily life.",
+        "options": [
+          "YES",
+          "NO",
+          "NOT GIVEN"
+        ],
+        "answer": "YES",
+        "explanation": "Đoạn D nói các lớp học đơn giản nhưng có thể tạo ảnh hưởng lớn đến cuộc sống hằng ngày."
+      },
+      {
+        "type": "multiple-choice",
+        "question": "10. The writer believes libraries can solve every social problem for free.",
+        "options": [
+          "YES",
+          "NO",
+          "NOT GIVEN"
+        ],
+        "answer": "NO",
+        "explanation": "Tác giả nói thư viện không nên bị xem là giải pháp miễn phí cho mọi vấn đề xã hội."
+      },
+      {
+        "type": "short-answer",
+        "question": "11. Digital support: people without a ______ at home.",
+        "answer": "computer",
+        "explanation": "Đoạn B: “People without a computer at home...”"
+      },
+      {
+        "type": "short-answer",
+        "question": "12. Study space: a library ______.",
+        "answer": "table",
+        "explanation": "Đoạn C: “A library table...”"
+      },
+      {
+        "type": "short-answer",
+        "question": "13. Community teaching: older adults learning to send ______.",
+        "answer": "emails",
+        "explanation": "Đoạn D: “teach older adults how to send emails...”"
+      },
+      {
+        "type": "short-answer",
+        "question": "14. Parent support: parents learning to read with ______.",
+        "answer": "young children",
+        "explanation": "Đoạn D: “parents learn how to read with young children.”"
+      },
+      {
+        "type": "short-answer",
+        "question": "15. What kind of staff do new services need? (NO MORE THAN TWO WORDS)",
+        "answer": "trained staff",
+        "explanation": "Đoạn E: “New services need trained staff...”"
+      },
+      {
+        "type": "short-answer",
+        "question": "16. What may fall if libraries do more without extra support? (NO MORE THAN TWO WORDS)",
+        "answer": "quality",
+        "explanation": "Đoạn E: “the quality of service may fall.”"
+      }
+    ],
+    "answerInstructions": "Questions 1–5: Write the Roman numeral of the correct heading (I–VII). Headings: I Financial limits on library services; II Libraries as quiet places to study; III The end of printed books; IV A wider role than book borrowing; V Why digital support should be public; VI Teaching practical skills in the community; VII How libraries choose medical workers. Questions 6–10: YES, NO or NOT GIVEN. Questions 11–14: Complete the table using NO MORE THAN TWO WORDS. Questions 15–16: NO MORE THAN TWO WORDS."
+  }
+]
