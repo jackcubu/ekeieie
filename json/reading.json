@@ -282,33 +282,78 @@
     "passage": "A  Public libraries used to be seen mainly as places for borrowing books. That role is still important, but many libraries now support a wider range of learning. Visitors may attend workshops, use computers, join reading groups or receive help with forms and online services.\n\nB  This change is partly a response to digital life. Many everyday tasks, from applying for jobs to booking medical appointments, now require internet access. People without a computer at home can easily feel excluded. In my opinion, libraries are one of the fairest places to offer digital support because they are open to everyone.\n\nC  Libraries also provide a calm study environment. Not every student has a quiet desk at home. Some live in crowded flats, while others share rooms with younger siblings. A library table, even for one hour, can give a learner the space needed to focus.\n\nD  Another important service is community teaching. In some libraries, volunteers teach older adults how to send emails or use video calls. In others, parents learn how to read with young children. These classes are usually simple, but they can have a strong effect on daily life.\n\nE  The challenge is funding. New services need trained staff, working computers and safe spaces. If libraries are expected to do more without extra support, the quality of service may fall. A modern library should not be treated as a free solution to every social problem, but it can be a powerful starting point.",
     "questions": [
       {
-        "type": "short-answer",
-        "question": "1. Paragraph A — Choose the correct heading (I–VII).",
-        "answer": "iv",
+        "type": "multiple-choice",
+        "question": "1. Paragraph A — Choose the correct heading.",
+        "options": [
+          "I Financial limits on library services",
+          "ii. Libraries as quiet places to study",
+          "iii. The end of printed books",
+          "iv. A wider role than book borrowing",
+          "V Why digital support should be public",
+          "vi. Teaching practical skills in the community",
+          "vii. How libraries choose medical workers"
+        ],
+        "answer": "iv. A wider role than book borrowing",
         "explanation": "Đoạn A nói thư viện hiện hỗ trợ phạm vi học tập rộng hơn, không chỉ cho mượn sách."
       },
       {
-        "type": "short-answer",
-        "question": "2. Paragraph B — Choose the correct heading (I–VII).",
-        "answer": "v",
+        "type": "multiple-choice",
+        "question": "2. Paragraph B — Choose the correct heading.",
+        "options": [
+          "I Financial limits on library services",
+          "ii. Libraries as quiet places to study",
+          "iii. The end of printed books",
+          "iv. A wider role than book borrowing",
+          "V Why digital support should be public",
+          "vi. Teaching practical skills in the community",
+          "vii. How libraries choose medical workers"
+        ],
+        "answer": "V Why digital support should be public",
         "explanation": "Đoạn B nêu quan điểm rằng thư viện là nơi công bằng để cung cấp hỗ trợ kỹ thuật số."
       },
       {
-        "type": "short-answer",
-        "question": "3. Paragraph C — Choose the correct heading (I–VII).",
-        "answer": "ii",
+        "type": "multiple-choice",
+        "question": "3. Paragraph C — Choose the correct heading.",
+        "options": [
+          "I Financial limits on library services",
+          "ii. Libraries as quiet places to study",
+          "iii. The end of printed books",
+          "iv. A wider role than book borrowing",
+          "V Why digital support should be public",
+          "vi. Teaching practical skills in the community",
+          "vii. How libraries choose medical workers"
+        ],
+        "answer": "ii. Libraries as quiet places to study",
         "explanation": "Đoạn C tập trung vào môi trường học tập yên tĩnh."
       },
       {
-        "type": "short-answer",
-        "question": "4. Paragraph D — Choose the correct heading (I–VII).",
-        "answer": "vi",
+        "type": "multiple-choice",
+        "question": "4. Paragraph D — Choose the correct heading.",
+        "options": [
+          "I Financial limits on library services",
+          "ii. Libraries as quiet places to study",
+          "iii. The end of printed books",
+          "iv. A wider role than book borrowing",
+          "V Why digital support should be public",
+          "vi. Teaching practical skills in the community",
+          "vii. How libraries choose medical workers"
+        ],
+        "answer": "vi. Teaching practical skills in the community",
         "explanation": "Đoạn D mô tả việc dạy các kỹ năng thực tế trong cộng đồng."
       },
       {
-        "type": "short-answer",
-        "question": "5. Paragraph E — Choose the correct heading (I–VII).",
-        "answer": "i",
+        "type": "multiple-choice",
+        "question": "5. Paragraph E — Choose the correct heading.",
+        "options": [
+          "I Financial limits on library services",
+          "ii. Libraries as quiet places to study",
+          "iii. The end of printed books",
+          "iv. A wider role than book borrowing",
+          "V Why digital support should be public",
+          "vi. Teaching practical skills in the community",
+          "vii. How libraries choose medical workers"
+        ],
+        "answer": "I Financial limits on library services",
         "explanation": "Đoạn E nói về khó khăn tài chính và nguồn lực của thư viện."
       },
       {
@@ -403,6 +448,6 @@
         "explanation": "Đoạn E: “the quality of service may fall.”"
       }
     ],
-    "answerInstructions": "Questions 1–5: Write the Roman numeral of the correct heading (I–VII). Headings: I Financial limits on library services; II Libraries as quiet places to study; III The end of printed books; IV A wider role than book borrowing; V Why digital support should be public; VI Teaching practical skills in the community; VII How libraries choose medical workers. Questions 6–10: YES, NO or NOT GIVEN. Questions 11–14: Complete the table using NO MORE THAN TWO WORDS. Questions 15–16: NO MORE THAN TWO WORDS."
+    "answerInstructions": "Questions 1–5: Choose the correct heading (I–VII) for each paragraph. Questions 6–10: YES, NO or NOT GIVEN. Questions 11–14: Complete the table using NO MORE THAN TWO WORDS. Questions 15–16: NO MORE THAN TWO WORDS."
   }
 ]
