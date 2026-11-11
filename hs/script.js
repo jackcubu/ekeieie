@@ -624,11 +624,38 @@ const typeWordCounter = document.getElementById("typeWordCounter");
 const typeWordScore = document.getElementById("typeWordScore");
 const typeWordFeedback = document.getElementById("typeWordFeedback");
 const typeWordNext = document.getElementById("typeWordNext");
+const typeWordHint = document.getElementById("typeWordHint");
 let typeWordDeck = [];
 let typeWordCurrent = null;
 let typeWordCount = 0;
 let typeWordCorrect = 0;
+let typeWordWrongAttempts = 0;
 let typeWordAnswered = false;
+
+function getTypeWordHint(word, revealRatio) {
+    const chars = [...word];
+    const letterIndexes = chars.map((char, index) =>
+        /[a-z]/i.test(char) ? index : -1
+    ).filter(index => index >= 0);
+    const revealCount = Math.min(
+        letterIndexes.length,
+        Math.max(3, Math.ceil(letterIndexes.length * revealRatio))
+    );
+    const revealed = new Set();
+    if (letterIndexes.length) revealed.add(letterIndexes[0]);
+    if (letterIndexes.length > 2) revealed.add(letterIndexes[Math.floor((letterIndexes.length - 1) / 2)]);
+    if (letterIndexes.length > 1) revealed.add(letterIndexes[letterIndexes.length - 1]);
+
+    // Reveal additional letters from left to right at the stronger hint level.
+    for (const index of letterIndexes) {
+        if (revealed.size >= revealCount) break;
+        revealed.add(index);
+    }
+    return chars.map((char, index) => {
+        if (!/[a-z]/i.test(char)) return char;
+        return revealed.has(index) ? char : "_";
+    }).join(" ");
+}
 
 function createTypeWordQuestion() {
     const words = vocabulary.filter(item => item.word && item.meaning);
@@ -640,11 +667,13 @@ function createTypeWordQuestion() {
         typeWordInput.disabled = true;
         document.getElementById("typeWordCheck").disabled = true;
         typeWordNext.hidden = true;
+        typeWordHint.hidden = true;
         return;
     }
     if (!typeWordDeck.length) typeWordDeck = shuffleArray(words);
     typeWordCurrent = typeWordDeck.pop();
     typeWordCount++;
+    typeWordWrongAttempts = 0;
     typeWordAnswered = false;
     typeWordMeaning.textContent = typeWordCurrent.meaning;
     typeWordCounter.textContent = "Question " + typeWordCount;
@@ -654,6 +683,8 @@ function createTypeWordQuestion() {
     document.getElementById("typeWordCheck").disabled = false;
     typeWordFeedback.textContent = "Type your answer and press Enter.";
     typeWordFeedback.className = "type-word-feedback";
+    typeWordHint.textContent = "";
+    typeWordHint.hidden = true;
     typeWordNext.hidden = true;
     typeWordInput.focus();
 }
@@ -666,21 +697,36 @@ typeWordForm.addEventListener("submit", event => {
         typeWordFeedback.textContent = "Please type an answer first.";
         return;
     }
-    typeWordAnswered = true;
     const correct = answer === typeWordCurrent.word.trim().toLowerCase();
     if (correct) {
+        typeWordAnswered = true;
         typeWordCorrect++;
         typeWordFeedback.textContent = "✓ Correct! " + typeWordCurrent.word;
         typeWordFeedback.className = "type-word-feedback correct";
-    } else {
-        typeWordFeedback.textContent = "Not quite. Correct answer: " + typeWordCurrent.word;
-        typeWordFeedback.className = "type-word-feedback incorrect";
+        typeWordScore.textContent = "Score: " + typeWordCorrect;
+        typeWordInput.disabled = true;
+        document.getElementById("typeWordCheck").disabled = true;
+        typeWordNext.hidden = false;
+        typeWordNext.focus();
+        return;
     }
-    typeWordScore.textContent = "Score: " + typeWordCorrect;
-    typeWordInput.disabled = true;
-    document.getElementById("typeWordCheck").disabled = true;
-    typeWordNext.hidden = false;
-    typeWordNext.focus();
+
+    typeWordWrongAttempts++;
+    typeWordInput.value = "";
+    typeWordInput.focus();
+
+    if (typeWordWrongAttempts >= 10) {
+        typeWordHint.textContent = "Hint (10 attempts): " + getTypeWordHint(typeWordCurrent.word, 0.7);
+        typeWordHint.hidden = false;
+        typeWordFeedback.textContent = "Not quite. More letters have been revealed — try again!";
+    } else if (typeWordWrongAttempts >= 3) {
+        typeWordHint.textContent = "Hint (3 attempts): " + getTypeWordHint(typeWordCurrent.word, 0.4);
+        typeWordHint.hidden = false;
+        typeWordFeedback.textContent = "Not quite. Here's a small hint — try again!";
+    } else {
+        typeWordFeedback.textContent = "Not quite. Try again! (" + (3 - typeWordWrongAttempts) + " more wrong attempt(s) until a hint.)";
+    }
+    typeWordFeedback.className = "type-word-feedback incorrect";
 });
 typeWordNext.addEventListener("click", createTypeWordQuestion);
 
