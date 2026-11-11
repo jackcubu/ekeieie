@@ -613,6 +613,77 @@ const wordMatchingMode = document.getElementById("wordMatchingMode");
 const quizMode = document.getElementById("quizMode");
 
 
+/* =====================================
+   TYPE THE WORD PRACTICE
+===================================== */
+const typeWordMode = document.getElementById("typeWordMode");
+const typeWordForm = document.getElementById("typeWordForm");
+const typeWordInput = document.getElementById("typeWordInput");
+const typeWordMeaning = document.getElementById("typeWordMeaning");
+const typeWordCounter = document.getElementById("typeWordCounter");
+const typeWordScore = document.getElementById("typeWordScore");
+const typeWordFeedback = document.getElementById("typeWordFeedback");
+const typeWordNext = document.getElementById("typeWordNext");
+let typeWordDeck = [];
+let typeWordCurrent = null;
+let typeWordCount = 0;
+let typeWordCorrect = 0;
+let typeWordAnswered = false;
+
+function createTypeWordQuestion() {
+    const words = vocabulary.filter(item => item.word && item.meaning);
+    if (!words.length) {
+        typeWordCurrent = null;
+        typeWordMeaning.textContent = "You haven't added any vocabulary yet.";
+        typeWordCounter.textContent = "No words available";
+        typeWordFeedback.textContent = "Add vocabulary first, then come back to practise.";
+        typeWordInput.disabled = true;
+        document.getElementById("typeWordCheck").disabled = true;
+        typeWordNext.hidden = true;
+        return;
+    }
+    if (!typeWordDeck.length) typeWordDeck = shuffleArray(words);
+    typeWordCurrent = typeWordDeck.pop();
+    typeWordCount++;
+    typeWordAnswered = false;
+    typeWordMeaning.textContent = typeWordCurrent.meaning;
+    typeWordCounter.textContent = "Question " + typeWordCount;
+    typeWordScore.textContent = "Score: " + typeWordCorrect;
+    typeWordInput.value = "";
+    typeWordInput.disabled = false;
+    document.getElementById("typeWordCheck").disabled = false;
+    typeWordFeedback.textContent = "Type your answer and press Enter.";
+    typeWordFeedback.className = "type-word-feedback";
+    typeWordNext.hidden = true;
+    typeWordInput.focus();
+}
+
+typeWordForm.addEventListener("submit", event => {
+    event.preventDefault();
+    if (!typeWordCurrent || typeWordAnswered) return;
+    const answer = typeWordInput.value.trim().toLowerCase();
+    if (!answer) {
+        typeWordFeedback.textContent = "Please type an answer first.";
+        return;
+    }
+    typeWordAnswered = true;
+    const correct = answer === typeWordCurrent.word.trim().toLowerCase();
+    if (correct) {
+        typeWordCorrect++;
+        typeWordFeedback.textContent = "✓ Correct! " + typeWordCurrent.word;
+        typeWordFeedback.className = "type-word-feedback correct";
+    } else {
+        typeWordFeedback.textContent = "Not quite. Correct answer: " + typeWordCurrent.word;
+        typeWordFeedback.className = "type-word-feedback incorrect";
+    }
+    typeWordScore.textContent = "Score: " + typeWordCorrect;
+    typeWordInput.disabled = true;
+    document.getElementById("typeWordCheck").disabled = true;
+    typeWordNext.hidden = false;
+    typeWordNext.focus();
+});
+typeWordNext.addEventListener("click", createTypeWordQuestion);
+
 function switchStudyMode(mode) {
 
     modeItems.forEach(item => {
@@ -634,6 +705,7 @@ function switchStudyMode(mode) {
     randomMode.hidden = mode !== "guess";
     wordMatchingMode.hidden = mode !== "match";
     quizMode.hidden = mode !== "quiz";
+    typeWordMode.hidden = mode !== "typeword";
 
     // Các chế độ chưa triển khai
     const comingSoon = ["mixed"].includes(mode);
@@ -681,6 +753,10 @@ function switchStudyMode(mode) {
 
     if (mode === "quiz") {
         createQuizQuestion();
+    }
+
+    if (mode === "typeword") {
+        createTypeWordQuestion();
     }
 }
 
