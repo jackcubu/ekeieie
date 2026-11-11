@@ -2253,3 +2253,5 @@ button, input, select, textarea {
 .type-word-feedback.correct{color:#26834f}
 .type-word-feedback.incorrect{color:#c34e63}
 @media(max-width:650px){.type-word-card{padding:18px}.type-word-prompt{padding:18px}.type-word-prompt p{font-size:19px}}
+
+.type-word-hint{margin-top:16px;padding:14px 18px;border:1px dashed var(--primary);border-radius:12px;background:var(--primary-soft);font-size:22px;font-weight:800;letter-spacing:3px;text-align:center;overflow-wrap:anywhere}
