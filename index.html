@@ -293,6 +293,9 @@
                         </div>
                         <span class="mode-arrow">→</span>
                     </button>
+                    <button class="mode-item" data-mode="typeword">
+                        <span>⌨</span><div><strong>Type the word</strong><small>Read the meaning and type the English word</small></div><span class="mode-arrow">→</span>
+                    </button>
                     <button class="mode-item" data-mode="match">
                         <span>⇄</span><div><strong>Word matching</strong><small>Match words with their meanings</small></div><span class="mode-arrow">→</span>
                     </button>
@@ -470,6 +473,33 @@
         Next word →
     </button>
 </div>
+</section>
+<!-- TYPE THE WORD MODE -->
+<section id="typeWordMode" class="study-mode" hidden>
+    <div class="type-word-card glass">
+        <header class="type-word-header">
+            <span class="card-label">ACTIVE RECALL PRACTICE</span>
+            <h2>Type the word</h2>
+            <p>Read the Vietnamese meaning and type the matching English word.</p>
+        </header>
+        <div class="type-word-progress">
+            <span id="typeWordCounter">Question 1</span>
+            <span id="typeWordScore">Score: 0</span>
+        </div>
+        <div class="type-word-prompt">
+            <span class="scramble-label">WORD MEANING</span>
+            <p id="typeWordMeaning">Meaning appears here.</p>
+        </div>
+        <form id="typeWordForm" class="type-word-form">
+            <label for="typeWordInput">YOUR ANSWER</label>
+            <input id="typeWordInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type the English word...">
+            <div class="type-word-actions">
+                <button type="submit" class="primary-btn" id="typeWordCheck">Check answer</button>
+                <button type="button" class="secondary-btn" id="typeWordNext" hidden>Next word →</button>
+            </div>
+        </form>
+        <p id="typeWordFeedback" class="type-word-feedback" aria-live="polite">Type your answer and press Enter.</p>
+    </div>
 </section>
 <!-- WORD MATCHING MODE -->
 <section id="wordMatchingMode" class="study-mode" hidden>
