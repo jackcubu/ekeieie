@@ -2235,3 +2235,21 @@ button, input, select, textarea {
     font: inherit;
     font-weight: 600;
 }
+
+/* TYPE THE WORD PRACTICE */
+.type-word-card{max-width:760px;margin:24px auto;padding:30px}
+.type-word-header{text-align:center;margin-bottom:24px}
+.type-word-header h2{font-size:28px;margin:8px 0}
+.type-word-header p{color:var(--muted);font-size:16px}
+.type-word-progress{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-weight:700}
+.type-word-prompt{margin:24px 0;padding:25px;border-radius:16px;background:var(--primary-soft);text-align:center}
+.type-word-prompt p{font-size:22px;font-weight:700;line-height:1.6;margin-top:10px}
+.type-word-form{display:grid;gap:12px}
+.type-word-form label{font-size:15px;font-weight:800;letter-spacing:.5px}
+.type-word-form input{width:100%;min-height:54px;padding:12px 16px;border:1px solid var(--border);border-radius:12px;background:var(--surface-solid);color:var(--text);font:inherit;font-size:18px;font-weight:600}
+.type-word-form input:focus{outline:2px solid var(--primary);outline-offset:2px}
+.type-word-actions{display:flex;gap:12px;flex-wrap:wrap}
+.type-word-feedback{min-height:28px;margin-top:18px;font-size:17px;font-weight:700}
+.type-word-feedback.correct{color:#26834f}
+.type-word-feedback.incorrect{color:#c34e63}
+@media(max-width:650px){.type-word-card{padding:18px}.type-word-prompt{padding:18px}.type-word-prompt p{font-size:19px}}
